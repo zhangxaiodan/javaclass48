@@ -10,7 +10,5 @@ github file
 
 git2 file
 
-hub file
 
-hub hub
-hub file2
+local file
