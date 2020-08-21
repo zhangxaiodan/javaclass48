@@ -1,0 +1,215 @@
+//更新期望工作
+function expectFormSave(){
+	$.ajax({
+		url:"/it/UserResServlet.do",
+		data:$("#expectForm").serialize()+"&op=ajaxupdate",
+		dataType:"text",
+		type:"post",
+		success:function(result){
+			if(result==1){
+				alert("保存成功！");
+				location.reload();
+			}else{
+				alert("保存失败！");
+			}
+		}
+	});
+}
+//更新工作经历
+function experienceFormsave(){
+	$.ajax({
+		url:"/it/UserResServlet.do",
+		data:$("#experienceForm").serialize()+"&op=ajaxupdatejl",
+		dataType:"text",
+		type:"post",
+		success:function(result){
+			
+			if(result==1){
+				alert("添加成功！");
+				location.reload();
+			}else{
+                alert("添加失败！");
+		    }
+		}
+	 });
+}
+//更新项目经验
+function projectFormsave(){
+	$.ajax({
+		url:"/it/UserResServlet.do",
+		data:$("#projectForm").serialize()+"&op=ajaxupdatepj",
+		dataType:"text",
+		type:"post",
+		success:function(result){
+			if(result==1){
+				alert("添加成功！");
+				location.reload();
+			}else{
+				alert("添加失败！");
+			}
+		}
+	});
+}
+//更新教育背景
+function educationalFormsave(){
+	$.ajax({
+		url:"/it/UserResServlet.do",
+		data:$("#educationalForm").serialize()+"&op=ajaxupdateedu",
+		dataType:"text",
+		type:"post",
+		success:function(result){
+			
+			if(result==1){
+				alert("保存成功！");
+				location.reload();
+			}else{
+			alert("保存失败！");
+			}
+		}
+	});
+}
+
+function descriptionFormsave(){
+	$.ajax({
+		url:"/it/UserResServlet.do",
+		data:$("#descriptionForm").serialize()+"&op=ajaxintroduce",
+		dataType:"text",
+		type:"post",
+		success:function(result){
+			if(result==1){
+				alert("保存成功！");
+				location.reload();
+			}else{
+				alert("保存失败！");
+			}
+		}
+	});
+}
+
+function workFormsave(){
+	$.ajax({
+		url:"/it/UserResServlet.do",
+		data:$("#workForm").serialize()+"&op=ajaxshow",
+		dataType:"text",
+		type:"post",
+		success:function(result){
+			if(result==1){
+				alert("保存成功！");
+				location.reload();
+			}else{
+				alert("保存失败！");
+			}
+		}
+	});
+}
+//修改名字
+function resumeNameFormSave(){
+	$.ajax({
+		url:"/it/UserResServlet.do",
+		data:$("#resumeNameForm").serialize()+"&op=ajaxchange",
+		dataType:"text",
+		type:"post",
+		success:function(result){
+			if(result==1){
+				//刷新跳转
+				location.href="jianli.jsp";
+			}else{
+				alert("保存失败！");
+			}
+		}
+	});
+}
+//取消收藏
+function collectionsFormsava(jno){
+	var msg=window.confirm("是否确定删除收藏");
+	if(msg==true){
+		alert("确定删除");
+	$.ajax({
+		url:"/it/UserResServlet.do",
+		data:$("#collectionsForm").serialize()+"&op=ajaxdel"+"&jno="+jno,
+		dataType:"text",
+		type:"post",
+		success:function(result){
+			if(result==1){
+				location.href="collections.jsp";
+			}else{
+				alert("删除失败！");
+			}
+		}
+	});
+	}else{
+		alert("不删除");
+	}
+}
+//订阅
+function subFormSave(){
+	$.ajax({
+		url:"/it/UserResServlet.do",
+		data:$("#subForm").serialize()+"&op=ajaxsub",
+		dataType:"text",
+		type:"post",
+		success:function(result){
+			if(result==1){
+				location.href="subscribe01.jsp";
+			}else{
+				alert("添加失败！");
+			}	
+		}
+	});
+}
+//删除订阅职位
+function subscribeFormSave(){
+	var msg=window.confirm("是否确定删除订阅职位");
+	if(msg==true){
+		alert("确定删除");
+	$.ajax({
+		url:"/it/UserResServlet.do",
+		data:$("#subscribeForm").serialize()+"&op=ajaxdeldy",
+		dataType:"text",
+		type:"post",
+		success:function(result){
+			if(result==1){
+				location.href="subscribe01.jsp";
+			}else{
+				alert("删除失败！");
+			}	
+		}
+	});
+	}else{
+		alert("不删除");
+	}
+}
+//基本信息
+function profileFormSave(){
+	$.ajax({
+		url:"/it/UserResServlet.do",
+		data:$("#profileForm").serialize()+"&op=basicinfo",
+		dataType:"text",
+		type:"post",
+		success:function(result){
+			if(result==1){
+				location.href="jianli.jsp";
+			}else{
+				alert("保存失败！");
+			}	
+		}
+	});
+}
+
+//投递简历addrem
+function addremSave(){
+	$.ajax({
+		url:"/it/UserResServlet.do",
+		data:$("#addremm").serialize()+"&op=Ajaxaddremm",
+		dataType:"text",
+		type:"post",
+		success:function(result){
+			if(result==1){
+				alert('投递成功');
+				location.href='toudi.jsp'; 	
+			}else{
+				alert("投递失败！");
+			}	
+		}
+	});
+}

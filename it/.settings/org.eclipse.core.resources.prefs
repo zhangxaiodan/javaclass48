@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//WebRoot/article-list.jsp=UTF-8
+encoding//src/com/kgc/dao/UregisterDao.java=UTF-8
+encoding//src/com/kgc/dao/impl/CollectionsJobimpl.java=UTF-8
+encoding//src/com/kgc/dao/impl/JobInfoDaoImpl.java=UTF-8
+encoding//src/com/kgc/dao/impl/ShowJobDaoImpl.java=UTF-8
+encoding//src/com/kgc/dao/impl/UinfoDaoImpl.java=UTF-8
+encoding//src/com/kgc/dao/impl/UloginDaoImpl.java=UTF-8
+encoding//src/com/kgc/dao/impl/UregisterDaoImpl.java=UTF-8
+encoding//src/com/kgc/dao/impl/UserResumeimpl.java=UTF-8
+encoding//src/com/kgc/pojo/BusinessInfo.java=UTF-8
+encoding//src/com/kgc/pojo/BusinessRecruit.java=UTF-8
+encoding//src/com/kgc/pojo/LikeInfo.java=UTF-8
+encoding//src/com/kgc/service/UloginService.java=UTF-8
+encoding//src/com/kgc/service/UserResuService.java=UTF-8
+encoding//src/com/kgc/servlet/LoginServlet.java=UTF-8
+encoding//src/com/kgc/servlet/UserResServlet.java=UTF-8
