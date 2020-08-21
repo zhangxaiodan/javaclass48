@@ -9,3 +9,5 @@ local file
 github file
 
 git2 file
+
+hub file
